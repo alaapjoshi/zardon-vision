@@ -51,8 +51,8 @@ People with low vision often need help with everyday tasks like reading a page o
 
 ### Installation
 ~~~bash
-git clone https://github.com/alaapjoshi/Zardon-Vision.git
-cd Zardon-Vision/server
+git clone https://github.com/alaapjoshi/zardon-vision.git
+cd zardon-vision/server
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -77,7 +77,7 @@ The landing page is static. Open `website/index.html` in a browser to view it.
 
 ## Project Structure
 ~~~text
-Zardon-Vision/
+zardon-vision/
   ios/          # Xcode project and SwiftUI source for the iPhone app
   server/       # Flask server that captions photos with ViT-GPT2
   website/      # Static landing page (HTML/CSS)
