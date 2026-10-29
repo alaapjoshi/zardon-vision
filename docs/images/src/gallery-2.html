@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="brand.css"><style>body{width:1600px;height:1000px}</style><style>.gallery .copy{flex:0 0 520px}.gallery .visual{flex:1}.terminal{width:100%}</style></head><body><div class="canvas gallery">
+<div class="copy"><div class="eyebrow">Object recognition</div><h1>Describe a photo out loud</h1>
+<p>The app sends a camera photo to a Flask server running the ViT-GPT2 image captioning model, then speaks the caption with AVSpeechSynthesizer.</p></div>
+<div class="visual"><div class="terminal"><div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">server</span></div>
+<pre><span class="p">$</span> python server.py
+<span class="dim">Done with setup in 25 seconds
+ * Running on http://127.0.0.1:20100</span>
+
+<span class="p">$</span> curl -F "file=@coast.jpg" \
+    http://127.0.0.1:20100/saveimage
+<span class="ok">a large body of water with mountains</span></pre></div></div></div></body></html>

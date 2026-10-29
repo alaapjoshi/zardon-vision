@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Zardon Vision</title>
+  <link rel="icon" type="image/x-icon" href="https://freeiconshop.com/wp-content/uploads/edd/eye-outline-filled.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Quicksand:wght@300&family=Rubik&display=swap"
+    rel="stylesheet">
+</head>
+
+<div class="header">
+
+  <!--Content before waves-->
+  <div class="inner-header flex">
+    <!--Just the logo.. Don't mind this-->
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+    <g>
+      <path fill="#fff"
+        d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+    C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+    c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+    </g>
+    <h1 style="font-family: 'Quicksand'">Zardon Vision</h1>
+  </div>
+
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+
+</div>
+<!--Header ends-->
+
+<!--Content starts-->
+<div class="heading">
+  <h1>Our Story</h1>
+  <p>One afternoon at the library, we noticed a young boy struggling to read a novel. After approaching and speaking to
+    him, we learned that he was visually impaired and had forgotten his glasses at home. After hearing about this, we
+    were determined to use our programming skills to create an innovative app to help him and others like him.
+    We developed Zardon Vision to utilize the mobile device’s camera to scan the surroundings to assist the visually
+    impaired. We designed the app to have a clean and user-friendly interface, with large high-contrast buttons and
+    clear instructions. Our aim was to create an app that would not only help the young boy we met at the library, but
+    also others facing similar challenges.
+  </p>
+  <div></div>
+  <h1>Object Recognition</h1>
+  <p> By utilizing the device's camera, the app can scan the surroundings and identify people and objects. We used a
+    custom GPT-2 and PyTorch model. An image can get uploaded to our Flask server where it is identified and then it
+    sends the information back to the app which reads out what the image was out loud. This feature would allow the user
+    to understand his/her surroundings and navigate their environment with ease.
+  </p>
+  <div></div>
+  <h1>Text Recognition</h1>
+  <p>Zardon can also take a photo of text to help a visually impaired person understand what it says. Using the Apple AI
+    vision api, the app can automatically identify the borders of where the text starts and ends.
+    The OCR software uses pattern-matching algorithms to compare text images, character by character, to its internal
+    database. If the system matches the text word by word, it is called optical word recognition.
+    The app uses advanced optical character recognition (OCR) technology to scan and interpret text. With this
+    technology, the app can capture text and convert it into audio, providing an immediate and accessible way for
+    individuals to comprehend written communication such as books, documents, and signs.
+  </p>
+  <div></div>
+  <h1>Depth Perception</h1>
+  <p> Disparity is the key concept behind perceiving depth. When observing an object, your eyes capture slightly
+    different views, known as disparity.
+    The brain utilizes this disparity to determine the object's distance.
+    The iPhone Front camera employs a similar approach using two cameras and analyzing "feature points." Through a
+    triangulation algorithm, the iPhone can compute the 3D position of each feature point, enabling it to determine the
+    depth of objects within the scene. This technique proves valuable for various applications like augmented reality
+    and portrait mode photography as it allows the iPhone to gauge the distance to different objects in the scene.
+    This technology can allow visually impaired people to more easily navigate their surroundings without exterior aid.
+  </p>
+  <div></div>
+  <h1>Facial Recognition</h1>
+  <p>Zardon Vision can also classify humans. By using a custom trained Yolov2 + Pytorch model we can somewhat accurately
+    classify different people.
+    Some difficulties we faced were overfitting(which occurs when a statistical model fits exactly against its training
+    data.), inaccurate, no catch case(has to be either one or the other)
+  </p>
+  <div></div>
+  <h1>Siri GPT</h1>
+  <p>We used IOS shortcut platform to program an easy way for visually impaired people to get access to information
+    quickly. Our app provides a link to the shortcut where users can set it up in less than 10 seconds. A user can then
+    activate Siri and say “Hey Siri, Mini Helper”. You can then speak a request to a custom trained model based off of
+    GPT-3 and Siri will then speak out the information that the model gave verbally.
+  </p>
+  <div></div>
+  <h1>Help Center</h1>
+  <p>This page can help any visually impaired person receive help when they require it. They have the option of
+    receiving help from a call center for general needs or specialized medical help from a hospital. We’ve also
+    integrated a contacts page which allows any visually impaired person to promptly contact another person.
+  </p>
+  <div></div>
+  <h1>Technologies</h1>
+  <p>
+    We used a combination of Swiftui and UIkit for the frontend. We used Python, Flask, and PyTorch for the image
+    recognition, For the text recognition, we used an Apple API called VisionKit and AVFoundation. We utilized html and
+    css for the website. For the facial recognition, we used YoloV2, Create Ml, and pytorch.
+  </p>
+  <div></div>
+  <h1>Struggles</h1>
+  <p>
+    For this project, we used mostly Swiftui. This is a newer framework that had a lot of issues. Especially with the
+    camera so we had to use uikit for that stuff. This was also the first time the majority of our group had ever used
+    Swift/App development.
+    Additionally, the design process ended up being rather difficult. We had to consider the demographic that the app
+    was designed for (visually impaired) and make sure that it could be easily used by them. We went through many
+    different designs for our app and website till we came up with something that would work.
+  </p>
+  <h1>Impact</h1>
+  <p style="padding-bottom: 20px;">This app provides solution that enhances accessibility and has the power to
+    revolutionize the lives of the visually impaired. Zardon Vision offers a new level of convenience by allowing the
+    user to conveniently access written information. Moreover, the app has the potential to save lives. Object
+    recognition and navigation assistance provide users with increased safety. Furthermore, this app serves as a
+    precedent for future innovation by showcasing how this technology is capable of helping visually impaired people.
+    <br>
+    <br>
+    <br>
+    <br>
+  </p>
+
+</div>
+<!--Content ends-->
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+
+  <p>&copy;Zardon Vision by Alaap Joshi, Aryan Acharya, and Ranbir Shanker</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

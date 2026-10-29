@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		968ED6132A0FFF1000B98AF0 /* Zardon_VisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6122A0FFF1000B98AF0 /* Zardon_VisionApp.swift */; };
+		968ED6152A0FFF1000B98AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6142A0FFF1000B98AF0 /* ContentView.swift */; };
+		968ED6172A0FFF1100B98AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968ED6162A0FFF1100B98AF0 /* Assets.xcassets */; };
+		968ED61A2A0FFF1100B98AF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968ED6192A0FFF1100B98AF0 /* Preview Assets.xcassets */; };
+		968ED6262A0FFFB900B98AF0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6252A0FFFB900B98AF0 /* CameraView.swift */; };
+		968ED6282A0FFFFA00B98AF0 /* DescribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6272A0FFFFA00B98AF0 /* DescribeView.swift */; };
+		968ED62A2A10002200B98AF0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6292A10002200B98AF0 /* HomeView.swift */; };
+		968ED62C2A10003F00B98AF0 /* FacetimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED62B2A10003F00B98AF0 /* FacetimeView.swift */; };
+		968ED6302A10009300B98AF0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED62F2A10009300B98AF0 /* TextView.swift */; };
+		968ED6322A1000A500B98AF0 /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6312A1000A500B98AF0 /* TextRecognition.swift */; };
+		968ED6342A1000B200B98AF0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6332A1000B200B98AF0 /* Model.swift */; };
+		968ED6362A1000C100B98AF0 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6352A1000C100B98AF0 /* ScannerView.swift */; };
+		968ED6382A1000CD00B98AF0 /* TextPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968ED6372A1000CD00B98AF0 /* TextPreviewView.swift */; };
+		9693857A2A10214400820B05 /* FacialReconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969385792A10214400820B05 /* FacialReconView.swift */; };
+		969385802A102BD400820B05 /* DepthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9693857F2A102BD400820B05 /* DepthView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		968ED60F2A0FFF1000B98AF0 /* Zardon Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zardon Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		968ED6122A0FFF1000B98AF0 /* Zardon_VisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zardon_VisionApp.swift; sourceTree = "<group>"; };
+		968ED6142A0FFF1000B98AF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		968ED6162A0FFF1100B98AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		968ED6192A0FFF1100B98AF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		968ED6252A0FFFB900B98AF0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		968ED6272A0FFFFA00B98AF0 /* DescribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeView.swift; sourceTree = "<group>"; };
+		968ED6292A10002200B98AF0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		968ED62B2A10003F00B98AF0 /* FacetimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacetimeView.swift; sourceTree = "<group>"; };
+		968ED62F2A10009300B98AF0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		968ED6312A1000A500B98AF0 /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognition.swift; sourceTree = "<group>"; };
+		968ED6332A1000B200B98AF0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		968ED6352A1000C100B98AF0 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		968ED6372A1000CD00B98AF0 /* TextPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPreviewView.swift; sourceTree = "<group>"; };
+		969385792A10214400820B05 /* FacialReconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialReconView.swift; sourceTree = "<group>"; };
+		9693857F2A102BD400820B05 /* DepthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		968ED60C2A0FFF1000B98AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		968ED6062A0FFF1000B98AF0 = {
+			isa = PBXGroup;
+			children = (
+				968ED6112A0FFF1000B98AF0 /* Zardon Vision */,
+				968ED6102A0FFF1000B98AF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		968ED6102A0FFF1000B98AF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				968ED60F2A0FFF1000B98AF0 /* Zardon Vision.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		968ED6112A0FFF1000B98AF0 /* Zardon Vision */ = {
+			isa = PBXGroup;
+			children = (
+				969385812A102BEC00820B05 /* Depth */,
+				968ED6242A0FFF6E00B98AF0 /* Facetime */,
+				968ED6232A0FFF5E00B98AF0 /* Facial Recognition */,
+				968ED6222A0FFF5900B98AF0 /* Home */,
+				968ED6212A0FFF5100B98AF0 /* Text */,
+				968ED6202A0FFF4C00B98AF0 /* Describe */,
+				968ED6122A0FFF1000B98AF0 /* Zardon_VisionApp.swift */,
+				968ED6142A0FFF1000B98AF0 /* ContentView.swift */,
+				968ED6162A0FFF1100B98AF0 /* Assets.xcassets */,
+				968ED6182A0FFF1100B98AF0 /* Preview Content */,
+			);
+			path = "Zardon Vision";
+			sourceTree = "<group>";
+		};
+		968ED6182A0FFF1100B98AF0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				968ED6192A0FFF1100B98AF0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		968ED6202A0FFF4C00B98AF0 /* Describe */ = {
+			isa = PBXGroup;
+			children = (
+				968ED6252A0FFFB900B98AF0 /* CameraView.swift */,
+				968ED6272A0FFFFA00B98AF0 /* DescribeView.swift */,
+			);
+			path = Describe;
+			sourceTree = "<group>";
+		};
+		968ED6212A0FFF5100B98AF0 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				968ED62F2A10009300B98AF0 /* TextView.swift */,
+				968ED6312A1000A500B98AF0 /* TextRecognition.swift */,
+				968ED6332A1000B200B98AF0 /* Model.swift */,
+				968ED6352A1000C100B98AF0 /* ScannerView.swift */,
+				968ED6372A1000CD00B98AF0 /* TextPreviewView.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		968ED6222A0FFF5900B98AF0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				968ED6292A10002200B98AF0 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		968ED6232A0FFF5E00B98AF0 /* Facial Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				969385792A10214400820B05 /* FacialReconView.swift */,
+			);
+			path = "Facial Recognition";
+			sourceTree = "<group>";
+		};
+		968ED6242A0FFF6E00B98AF0 /* Facetime */ = {
+			isa = PBXGroup;
+			children = (
+				968ED62B2A10003F00B98AF0 /* FacetimeView.swift */,
+			);
+			path = Facetime;
+			sourceTree = "<group>";
+		};
+		969385812A102BEC00820B05 /* Depth */ = {
+			isa = PBXGroup;
+			children = (
+				9693857F2A102BD400820B05 /* DepthView.swift */,
+			);
+			path = Depth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		968ED60E2A0FFF1000B98AF0 /* Zardon Vision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 968ED61D2A0FFF1100B98AF0 /* Build configuration list for PBXNativeTarget "Zardon Vision" */;
+			buildPhases = (
+				968ED60B2A0FFF1000B98AF0 /* Sources */,
+				968ED60C2A0FFF1000B98AF0 /* Frameworks */,
+				968ED60D2A0FFF1000B98AF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zardon Vision";
+			productName = "Zardon Vision";
+			productReference = 968ED60F2A0FFF1000B98AF0 /* Zardon Vision.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		968ED6072A0FFF1000B98AF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					968ED60E2A0FFF1000B98AF0 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 968ED60A2A0FFF1000B98AF0 /* Build configuration list for PBXProject "Zardon Vision" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 968ED6062A0FFF1000B98AF0;
+			productRefGroup = 968ED6102A0FFF1000B98AF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				968ED60E2A0FFF1000B98AF0 /* Zardon Vision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		968ED60D2A0FFF1000B98AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968ED61A2A0FFF1100B98AF0 /* Preview Assets.xcassets in Resources */,
+				968ED6172A0FFF1100B98AF0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		968ED60B2A0FFF1000B98AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9693857A2A10214400820B05 /* FacialReconView.swift in Sources */,
+				968ED62C2A10003F00B98AF0 /* FacetimeView.swift in Sources */,
+				968ED6302A10009300B98AF0 /* TextView.swift in Sources */,
+				969385802A102BD400820B05 /* DepthView.swift in Sources */,
+				968ED6262A0FFFB900B98AF0 /* CameraView.swift in Sources */,
+				968ED6282A0FFFFA00B98AF0 /* DescribeView.swift in Sources */,
+				968ED6152A0FFF1000B98AF0 /* ContentView.swift in Sources */,
+				968ED6342A1000B200B98AF0 /* Model.swift in Sources */,
+				968ED62A2A10002200B98AF0 /* HomeView.swift in Sources */,
+				968ED6322A1000A500B98AF0 /* TextRecognition.swift in Sources */,
+				968ED6362A1000C100B98AF0 /* ScannerView.swift in Sources */,
+				968ED6382A1000CD00B98AF0 /* TextPreviewView.swift in Sources */,
+				968ED6132A0FFF1000B98AF0 /* Zardon_VisionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		968ED61B2A0FFF1100B98AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		968ED61C2A0FFF1100B98AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		968ED61E2A0FFF1100B98AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zardon Vision/Preview Content\"";
+				DEVELOPMENT_TEAM = 8H3MF75W9N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for Text + Object detection(If you're reading this you are cool)";
+				INFOPLIST_KEY_NSSiriUsageDescription = "Used for Siri Commands";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alaapjoshi.test23245.Zardon-Vision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		968ED61F2A0FFF1100B98AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zardon Vision/Preview Content\"";
+				DEVELOPMENT_TEAM = 8H3MF75W9N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for Text + Object detection(If you're reading this you are cool)";
+				INFOPLIST_KEY_NSSiriUsageDescription = "Used for Siri Commands";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alaapjoshi.test23245.Zardon-Vision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		968ED60A2A0FFF1000B98AF0 /* Build configuration list for PBXProject "Zardon Vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				968ED61B2A0FFF1100B98AF0 /* Debug */,
+				968ED61C2A0FFF1100B98AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		968ED61D2A0FFF1100B98AF0 /* Build configuration list for PBXNativeTarget "Zardon Vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				968ED61E2A0FFF1100B98AF0 /* Debug */,
+				968ED61F2A0FFF1100B98AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 968ED6072A0FFF1000B98AF0 /* Project object */;
+}

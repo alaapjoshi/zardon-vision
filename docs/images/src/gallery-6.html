@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="brand.css"><style>body{width:1600px;height:1000px}</style><style>
+.w{width:1600px;height:1000px;padding:88px 96px} h1{font-size:64px;font-weight:800;letter-spacing:-0.02em;margin:20px 0 0}
+.d{position:relative;margin-top:64px;height:620px}
+.b{position:absolute;padding:24px 28px;border-radius:16px;background:var(--card);box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.b h3{font-size:28px;font-weight:700} .b p{font-size:20px;color:var(--muted);margin-top:8px;line-height:1.4}
+.app{left:0;top:0;width:430px;height:620px;border:2px solid var(--accent);background:transparent;box-shadow:none}
+.app h3{color:var(--accent)} .t{position:absolute;left:28px;width:370px;padding:20px 24px;background:var(--card);border-radius:12px;font-size:24px;font-weight:600}
+svg{position:absolute;left:0;top:0}
+.lbl{position:absolute;font-size:18px;color:var(--muted);font-family:'JetBrains Mono',monospace}
+</style></head><body><div class="canvas w"><div class="eyebrow">How it works</div><h1>Architecture</h1>
+<div class="d">
+<div class="b app"><h3>iOS app (SwiftUI)</h3>
+<div class="t" style="top:96px">Text Recognition</div>
+<div class="t" style="top:226px">Object Recognition</div>
+<div class="t" style="top:356px">Human Help Center</div>
+<div class="t" style="top:486px">Spoken feedback</div></div>
+<div class="b" style="left:600px;top:88px;width:400px"><h3>Apple Vision</h3><p>On-device text recognition</p></div>
+<div class="b" style="left:600px;top:218px;width:400px"><h3>Flask server</h3><p>POST /saveimage on port 20100</p></div>
+<div class="b" style="left:1100px;top:218px;width:308px"><h3>ViT-GPT2</h3><p>Hugging Face image captioning (PyTorch)</p></div>
+<div class="b" style="left:600px;top:348px;width:400px"><h3>FaceTime</h3><p>Opens a facetime:// call</p></div>
+<div class="b" style="left:600px;top:478px;width:400px"><h3>AVSpeechSynthesizer</h3><p>Reads text and captions aloud</p></div>
+<svg width="1408" height="620"><defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#38BDF8"/></marker></defs>
+<g stroke="#38BDF8" stroke-width="2.5" fill="none" marker-end="url(#a)">
+<line x1="430" y1="128" x2="592" y2="128"/><line x1="430" y1="258" x2="592" y2="258"/>
+<line x1="1000" y1="270" x2="1092" y2="270"/><line x1="430" y1="388" x2="592" y2="388"/><line x1="430" y1="518" x2="592" y2="518"/></g></svg>
+<div class="lbl" style="left:446px;top:226px">photo</div>
+</div></div></body></html>
