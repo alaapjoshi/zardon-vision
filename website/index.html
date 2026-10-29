@@ -4,7 +4,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <title>Zardon Vision</title>
-  <link rel="icon" type="image/x-icon" href="https://freeiconshop.com/wp-content/uploads/edd/eye-outline-filled.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Quicksand:wght@300&family=Rubik&display=swap"
@@ -48,86 +48,57 @@
 
 <!--Content starts-->
 <div class="heading">
-  <h1>Our Story</h1>
-  <p>One afternoon at the library, we noticed a young boy struggling to read a novel. After approaching and speaking to
-    him, we learned that he was visually impaired and had forgotten his glasses at home. After hearing about this, we
-    were determined to use our programming skills to create an innovative app to help him and others like him.
-    We developed Zardon Vision to utilize the mobile device’s camera to scan the surroundings to assist the visually
-    impaired. We designed the app to have a clean and user-friendly interface, with large high-contrast buttons and
-    clear instructions. Our aim was to create an app that would not only help the young boy we met at the library, but
-    also others facing similar challenges.
+  <h1>My Story</h1>
+  <p>One afternoon at the library, I noticed a young boy struggling to read a novel. After talking with him, I learned
+    that he was visually impaired and had forgotten his glasses at home. That stuck with me, and I decided to build an
+    app that could help him and others like him.
+    Zardon Vision uses the phone's camera to read text and describe surroundings out loud. I designed it with large,
+    high-contrast buttons, and every screen announces itself when it opens, so it can be used without reading the
+    screen.
   </p>
   <div></div>
   <h1>Object Recognition</h1>
-  <p> By utilizing the device's camera, the app can scan the surroundings and identify people and objects. We used a
-    custom GPT-2 and PyTorch model. An image can get uploaded to our Flask server where it is identified and then it
-    sends the information back to the app which reads out what the image was out loud. This feature would allow the user
-    to understand his/her surroundings and navigate their environment with ease.
+  <p>The user takes a photo, and the app uploads it to a Flask server running a ViT-GPT2 image captioning model built
+    with PyTorch and Hugging Face Transformers. The server sends back a one-sentence description, such as "a large body
+    of water with mountains", and the app reads it out loud.
   </p>
   <div></div>
   <h1>Text Recognition</h1>
-  <p>Zardon can also take a photo of text to help a visually impaired person understand what it says. Using the Apple AI
-    vision api, the app can automatically identify the borders of where the text starts and ends.
-    The OCR software uses pattern-matching algorithms to compare text images, character by character, to its internal
-    database. If the system matches the text word by word, it is called optical word recognition.
-    The app uses advanced optical character recognition (OCR) technology to scan and interpret text. With this
-    technology, the app can capture text and convert it into audio, providing an immediate and accessible way for
-    individuals to comprehend written communication such as books, documents, and signs.
+  <p>The user scans a page with the document camera, which finds the edges of the page automatically. Apple's Vision
+    framework then recognizes the text on the device, with language correction turned on, and the app reads each page
+    out loud. It works on books, documents, and signs, and it does not need an internet connection.
   </p>
   <div></div>
   <h1>Depth Perception</h1>
-  <p> Disparity is the key concept behind perceiving depth. When observing an object, your eyes capture slightly
-    different views, known as disparity.
-    The brain utilizes this disparity to determine the object's distance.
-    The iPhone Front camera employs a similar approach using two cameras and analyzing "feature points." Through a
-    triangulation algorithm, the iPhone can compute the 3D position of each feature point, enabling it to determine the
-    depth of objects within the scene. This technique proves valuable for various applications like augmented reality
-    and portrait mode photography as it allows the iPhone to gauge the distance to different objects in the scene.
-    This technology can allow visually impaired people to more easily navigate their surroundings without exterior aid.
-  </p>
-  <div></div>
-  <h1>Facial Recognition</h1>
-  <p>Zardon Vision can also classify humans. By using a custom trained Yolov2 + Pytorch model we can somewhat accurately
-    classify different people.
-    Some difficulties we faced were overfitting(which occurs when a statistical model fits exactly against its training
-    data.), inaccurate, no catch case(has to be either one or the other)
-  </p>
-  <div></div>
-  <h1>Siri GPT</h1>
-  <p>We used IOS shortcut platform to program an easy way for visually impaired people to get access to information
-    quickly. Our app provides a link to the shortcut where users can set it up in less than 10 seconds. A user can then
-    activate Siri and say “Hey Siri, Mini Helper”. You can then speak a request to a custom trained model based off of
-    GPT-3 and Siri will then speak out the information that the model gave verbally.
+  <p>Depth is perceived through disparity: each eye sees a slightly different view, and the brain uses the difference
+    to judge distance. The iPhone's TrueDepth camera works on a similar idea. The Depth Perception tab is my starting
+    point for using that data to help people sense how far away objects are.
   </p>
   <div></div>
   <h1>Help Center</h1>
-  <p>This page can help any visually impaired person receive help when they require it. They have the option of
-    receiving help from a call center for general needs or specialized medical help from a hospital. We’ve also
-    integrated a contacts page which allows any visually impaired person to promptly contact another person.
+  <p>The Human Help Center lists helpers and shows who is available. One tap starts a FaceTime call, and each helper
+    has a profile with their time zone and a short bio. The home screen also has a panic button and shortcuts to open
+    apps like Uber and Uber Eats.
   </p>
   <div></div>
   <h1>Technologies</h1>
   <p>
-    We used a combination of Swiftui and UIkit for the frontend. We used Python, Flask, and PyTorch for the image
-    recognition, For the text recognition, we used an Apple API called VisionKit and AVFoundation. We utilized html and
-    css for the website. For the facial recognition, we used YoloV2, Create Ml, and pytorch.
+    I built the app in SwiftUI, with UIKit for the camera. Text recognition uses Apple's Vision and VisionKit, and all
+    spoken feedback uses AVFoundation. Image captioning runs on a Python server with Flask, PyTorch, and Hugging Face
+    Transformers. This website is plain HTML and CSS.
   </p>
   <div></div>
   <h1>Struggles</h1>
   <p>
-    For this project, we used mostly Swiftui. This is a newer framework that had a lot of issues. Especially with the
-    camera so we had to use uikit for that stuff. This was also the first time the majority of our group had ever used
-    Swift/App development.
-    Additionally, the design process ended up being rather difficult. We had to consider the demographic that the app
-    was designed for (visually impaired) and make sure that it could be easily used by them. We went through many
-    different designs for our app and website till we came up with something that would work.
+    This was my first time doing Swift and app development. SwiftUI was still new and had gaps, especially around the
+    camera, so I used UIKit for those parts. Design was also hard: the app had to work for people who cannot rely on
+    seeing the screen, so I went through many layouts before settling on big buttons and spoken feedback.
+    I also tried training a facial recognition model with Create ML, but it overfit to its training data and was not
+    accurate enough to ship. That is on my list for next time.
   </p>
   <h1>Impact</h1>
-  <p style="padding-bottom: 20px;">This app provides solution that enhances accessibility and has the power to
-    revolutionize the lives of the visually impaired. Zardon Vision offers a new level of convenience by allowing the
-    user to conveniently access written information. Moreover, the app has the potential to save lives. Object
-    recognition and navigation assistance provide users with increased safety. Furthermore, this app serves as a
-    precedent for future innovation by showcasing how this technology is capable of helping visually impaired people.
+  <p style="padding-bottom: 20px;">Zardon Vision makes written information and everyday surroundings easier to access
+    for people with low vision. It won 2nd place overall at MontyHacks VI.
     <br>
     <br>
     <br>
@@ -144,7 +115,7 @@
     <div class="wave" id="wave4"></div>
   </div>
 
-  <p>&copy;Zardon Vision by Alaap Joshi, Aryan Acharya, and Ranbir Shanker</p>
+  <p>&copy; Zardon Vision by Alaap Joshi</p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
